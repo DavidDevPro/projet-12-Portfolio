@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+
+  .homeTitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 250px;
+  }
+}
