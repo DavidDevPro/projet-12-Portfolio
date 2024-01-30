@@ -7,3 +7,8 @@
 @mixin roboto {
   font-family: "Roboto", sans-serif;
 }
+
+/********** font roboto mono**********/
+@mixin roboto-mono {
+  font-family: "Roboto Mono", monospace;
+}

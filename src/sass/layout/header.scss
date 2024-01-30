@@ -1,16 +1,29 @@
 @import "../utils/mixins";
-
+@import "../utils/variables";
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 0;
+  padding: 25px 10px;
 
   .homeTitle {
-    @include montserrat;
+    color: $primary_color;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 250px;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    h1 {
+      @include montserrat;
+      color: $third_color;
+      font-size: 1.8em;
+      font-weight: 500;
+    }
+    span {
+      @include roboto-mono;
+      color: $fourth_color;
+      font-size: 1.1em;
+      font-weight: 400;
+    }
   }
 }

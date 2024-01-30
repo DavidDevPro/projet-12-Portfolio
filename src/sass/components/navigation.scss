@@ -1,19 +1,56 @@
 @import "../utils/mixins";
+@import "../utils/variables";
 
 .navigation {
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   a {
     text-decoration: none;
-    @include montserrat;
   }
 
   span {
+    @include roboto-mono;
+    color: $fourth500_color;
+    font-size: 0.9em;
     display: block;
     text-align: right;
+  }
+  h2 {
+    @include montserrat;
+    color: $third500_color;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  .navEffect h2 {
+    font-weight: 600;
+    color: $third_color;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 0;
+      background-color: $third_color;
+      position: absolute;
+      border-radius: 10px;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: anim 400ms ease forwards;
+
+      @keyframes anim {
+        to {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .navEffect span {
+    font-weight: 500;
+    color: $fourth_color;
   }
 }
