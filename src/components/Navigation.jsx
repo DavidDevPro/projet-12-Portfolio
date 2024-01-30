@@ -14,7 +14,7 @@ const Navigation = () => {
         </div>
       </NavLink>
       <NavLink
-        to="/"
+        to="/skills"
         className={({ isActive }) => (isActive ? "navEffect" : "")}
       >
         <div>
@@ -23,7 +23,7 @@ const Navigation = () => {
         </div>
       </NavLink>
       <NavLink
-        to="/"
+        to="/projects"
         className={({ isActive }) => (isActive ? "navEffect" : "")}
       >
         <div>
@@ -32,7 +32,7 @@ const Navigation = () => {
         </div>
       </NavLink>
       <NavLink
-        to="/"
+        to="/experience"
         className={({ isActive }) => (isActive ? "navEffect" : "")}
       >
         <div>
@@ -41,7 +41,7 @@ const Navigation = () => {
         </div>
       </NavLink>
       <NavLink
-        to="/"
+        to="/contact"
         className={({ isActive }) => (isActive ? "navEffect" : "")}
       >
         <div>
