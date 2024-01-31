@@ -12,13 +12,19 @@ const Footer = () => {
   return (
     <footer>
       <div className="iconsContainer">
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          alt="Twitter"
+        >
           <FontAwesomeIcon className="icons" icon={faTwitter} />{" "}
         </a>
         <a
           href="https://www.linkedin.com/in/david-changea-440a7945/"
           target="_blank"
           rel="noopener noreferrer"
+          alt="Linkedin"
         >
           <FontAwesomeIcon className="icons" icon={faLinkedinIn} />{" "}
         </a>
@@ -26,6 +32,7 @@ const Footer = () => {
           href="https://www.facebook.com/veday.shop/?locale=fr_FR"
           target="_blank"
           rel="noopener noreferrer"
+          alt="Facebook"
         >
           <FontAwesomeIcon className="icons" icon={faFacebookF} />{" "}
         </a>
@@ -33,6 +40,7 @@ const Footer = () => {
           href="https://github.com/david-backup"
           target="_blank"
           rel="noopener noreferrer"
+          alt="GitHub"
         >
           <FontAwesomeIcon className="icons" icon={faGithub} />{" "}
         </a>
@@ -40,6 +48,7 @@ const Footer = () => {
           href="mailto:14ir155@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
+          alt="Send a message"
         >
           <FontAwesomeIcon className="icons" icon={faEnvelope} />{" "}
         </a>

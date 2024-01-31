@@ -20,20 +20,20 @@
   }
   h2 {
     @include montserrat;
-    color: $third500_color;
+    color: $third_color;
     font-size: 1.2em;
     font-weight: 500;
   }
   .navEffect h2 {
     font-weight: 600;
-    color: $third_color;
+    color: $secondary_color;
     position: relative;
 
     &::after {
       content: "";
       height: 2px;
       width: 0;
-      background-color: $third_color;
+      background-color: $secondary_color;
       position: absolute;
       border-radius: 10px;
       bottom: -2px;

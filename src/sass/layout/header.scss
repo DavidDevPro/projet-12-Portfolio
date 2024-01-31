@@ -12,22 +12,10 @@ header {
   box-sizing: border-box;
 
   .homeTitle {
-    color: $primary_color;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-
-    h1 {
-      @include montserrat;
-      color: $third_color;
-      font-size: 1.8em;
-      font-weight: 500;
-    }
     span {
       @include roboto-mono;
       color: $fourth_color;
-      font-size: 1.1em;
+      font-size: 1.5em;
       font-weight: 400;
     }
   }

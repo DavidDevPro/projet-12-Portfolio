@@ -7,15 +7,17 @@ const Navigation = () => {
       <NavLink
         to="/"
         className={({ isActive }) => (isActive ? "navEffect" : "")}
+        alt="Accueil"
       >
         <div>
           <span>01</span>
-          <h2>Maison</h2>
+          <h2>Accueil</h2>
         </div>
       </NavLink>
       <NavLink
         to="/skills"
         className={({ isActive }) => (isActive ? "navEffect" : "")}
+        alt="Compétences"
       >
         <div>
           <span>02</span>
@@ -25,6 +27,7 @@ const Navigation = () => {
       <NavLink
         to="/projects"
         className={({ isActive }) => (isActive ? "navEffect" : "")}
+        alt="Projets"
       >
         <div>
           <span>03</span>
@@ -34,6 +37,7 @@ const Navigation = () => {
       <NavLink
         to="/experience"
         className={({ isActive }) => (isActive ? "navEffect" : "")}
+        alt="Expérience"
       >
         <div>
           <span>04</span>
@@ -43,6 +47,7 @@ const Navigation = () => {
       <NavLink
         to="/contact"
         className={({ isActive }) => (isActive ? "navEffect" : "")}
+        alt="Contact"
       >
         <div>
           <span>05</span>

@@ -1,8 +1,12 @@
 import React from "react";
-import homeBack from "../assets/img/background-1.jpg";
+import HomeMain from "../components/HomeMain";
 
 const HomePage = () => {
-  return <div className="home"></div>;
+  return (
+    <div className="home">
+      <HomeMain />
+    </div>
+  );
 };
 
 export default HomePage;

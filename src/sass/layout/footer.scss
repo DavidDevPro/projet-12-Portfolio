@@ -24,11 +24,9 @@ footer {
     .icons {
       @include transition;
       display: flex;
-      //align-items: center;
-      //justify-content: center;
       padding: 12px;
       color: $secondary_color;
-      border: 2px solid $fourth500_color;
+      border: 2px solid $fourth_color;
       border-radius: 50px;
       font-size: 1.2em;
       cursor: pointer;
