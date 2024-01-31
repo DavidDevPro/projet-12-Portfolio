@@ -12,3 +12,8 @@
 @mixin roboto-mono {
   font-family: "Roboto Mono", monospace;
 }
+
+/********** transition ********/
+@mixin transition {
+  transition: all 350ms ease-in-out;
+}

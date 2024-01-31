@@ -2,11 +2,10 @@
 @import "../utils/variables";
 
 .navigation {
-  width: 100%;
-  max-width: 650px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
 
   a {
     text-decoration: none;
