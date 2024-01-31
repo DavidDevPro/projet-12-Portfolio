@@ -12,11 +12,37 @@ const Footer = () => {
   return (
     <footer>
       <div className="iconsContainer">
-        <FontAwesomeIcon className="icons" icon={faTwitter} />
-        <FontAwesomeIcon className="icons" icon={faLinkedinIn} />
-        <FontAwesomeIcon className="icons" icon={faFacebookF} />
-        <FontAwesomeIcon className="icons" icon={faGithub} />
-        <FontAwesomeIcon className="icons" icon={faEnvelope} />
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon className="icons" icon={faTwitter} />{" "}
+        </a>
+        <a
+          href="https://www.linkedin.com/in/david-changea-440a7945/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="icons" icon={faLinkedinIn} />{" "}
+        </a>
+        <a
+          href="https://www.facebook.com/veday.shop/?locale=fr_FR"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="icons" icon={faFacebookF} />{" "}
+        </a>
+        <a
+          href="https://github.com/david-backup"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="icons" icon={faGithub} />{" "}
+        </a>
+        <a
+          href="mailto:14ir155@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="icons" icon={faEnvelope} />{" "}
+        </a>
       </div>
     </footer>
   );
