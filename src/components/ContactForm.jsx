@@ -14,6 +14,10 @@ const ContactForm = () => {
     const message = formData.get("message");
 
     form.reset();
+
+    alert(
+      `Firstname: ${firstname} Surname: ${surname}Email: ${email} Message: ${message} `
+    );
   };
 
   return (
