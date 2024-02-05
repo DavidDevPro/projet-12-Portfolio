@@ -23,15 +23,22 @@ const ContactForm = () => {
   return (
     <div className="formulaire">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="firstname">
-          {" "}
-          <FontAwesomeIcon className="icons" icon={faShare} /> Votre prénom
-        </label>
-        <input name="firstname" type="text" id="firstname" />
-        <label htmlFor="surname">
-          <FontAwesomeIcon className="icons" icon={faShare} /> Votre nom
-        </label>
-        <input name="surname" type="text" id="surname" />
+        <div className="boxContent">
+          <div className="content">
+            <label htmlFor="firstname">
+              {" "}
+              <FontAwesomeIcon className="icons" icon={faShare} /> Votre prénom
+            </label>
+            <input name="firstname" type="text" id="firstname" />
+          </div>
+
+          <div className="content">
+            <label htmlFor="surname">
+              <FontAwesomeIcon className="icons" icon={faShare} /> Votre nom
+            </label>
+            <input name="surname" type="text" id="surname" />
+          </div>
+        </div>
         <label htmlFor="email">
           <FontAwesomeIcon className="icons" icon={faShare} /> Votre e-mail
         </label>
