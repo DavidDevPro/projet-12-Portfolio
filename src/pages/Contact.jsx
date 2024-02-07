@@ -1,12 +1,14 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
-import ContactCard from "../components/ContactCard";
+import ContactText from "../components/ContactText";
 
 const Contact = () => {
   return (
-    <div className="contactContainer">
-      <ContactCard />
-      <ContactForm />
+    <div className="contactPage">
+      <div className="contactContainer">
+        <ContactText />
+        <ContactForm />
+      </div>
     </div>
   );
 };

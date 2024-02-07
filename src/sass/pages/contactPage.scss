@@ -1,10 +1,45 @@
-.contactContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.contactPage {
+  padding: 0 20px;
   width: 100%;
   max-width: 1600px;
   margin: auto;
-  height: 80vh;
   box-sizing: border-box;
+
+  .contactContainer {
+    @include transition;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1600px;
+    margin: 170px auto;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 0 20px;
+    // background-color: rgba(255, 255, 255, 0.02);
+    // box-shadow: rgba(255, 255, 255, 1) 0px 0px 17px -10px;
+    // backdrop-filter: blur(7px);
+    border-radius: 15px;
+    animation: card ease-in-out 800ms;
+
+    @keyframes card {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @media screen and (max-width: 1215px) {
+      flex-direction: column;
+      margin: 50px auto;
+      align-items: center;
+      height: 72vh;
+      @media screen and (max-width: 768px) {
+        height: 75vh;
+      }
+    }
+  }
 }

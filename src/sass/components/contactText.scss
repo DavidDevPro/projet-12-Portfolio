@@ -1,0 +1,72 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.contactText {
+  color: $secondary_color;
+  @include montserrat;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    @include transition;
+    font-weight: 500;
+    font-size: 3.5em;
+    margin: 140px 0 60px;
+    width: 100%;
+    min-width: 420px;
+    @media screen and (max-width: 1215px) {
+      min-width: 100%;
+      text-align: center;
+      margin: 50px 0 60px;
+      font-size: 3em;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 10px 0 30px;
+      font-size: 2.5em;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 1.8em;
+    }
+  }
+  p {
+    @include transition;
+    margin-bottom: 25px;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-size: 1.1em;
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
+      text-align: center;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 0.8em;
+    }
+  }
+  span {
+    text-align: center;
+    @media screen and (max-width: 1215px) {
+      height: 0;
+      opacity: 0;
+    }
+
+    .icon {
+      color: $fourth_color;
+      font-size: 5em;
+      margin: 30px 0 0 0px;
+      animation: 1000ms infinite alternate arrow;
+      position: relative;
+
+      @keyframes arrow {
+        from {
+          left: -20px;
+        }
+        to {
+          left: 20px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1215px) {
+    align-items: center;
+  }
+}
