@@ -1,7 +1,12 @@
 import React from "react";
+import ProjetsSite from "../components/ProjetsSite";
 
 const Projects = () => {
-  return <div></div>;
+  return (
+    <div className="projetsPage">
+      <ProjetsSite />
+    </div>
+  );
 };
 
 export default Projects;

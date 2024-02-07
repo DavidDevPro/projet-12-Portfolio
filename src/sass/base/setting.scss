@@ -106,11 +106,11 @@ section {
   display: block;
 }
 body {
-  height: 100vh;
   line-height: 1;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background: url(../assets/img/background-9.jpg) no-repeat center/cover;
+  // background: url(../assets/img/background-9.jpg) no-repeat center/cover;
+  background-color: black;
 }
 ol,
 ul {

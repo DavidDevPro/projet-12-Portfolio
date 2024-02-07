@@ -4,12 +4,21 @@
 .home {
   box-sizing: border-box;
   width: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  img {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+  }
 
   .homeMain {
     width: 100%;
     max-width: 1560px;
-    margin: 200px auto 0;
+    margin: 60px auto;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -17,7 +26,7 @@
     h1 {
       @include montserrat;
       color: $secondary_color;
-      font-size: 2.5em;
+      font-size: 2.2em;
     }
     .homeName {
       display: flex;
@@ -27,20 +36,20 @@
         @include montserrat;
         color: $secondary_color;
         font-weight: 600;
-        font-size: 5em;
+        font-size: 4em;
       }
       span {
         @include montserrat;
         color: $fourth_color;
         font-weight: 600;
-        font-size: 5em;
+        font-size: 4em;
       }
     }
     p {
       @include montserrat;
       color: $secondary_color;
       font-weight: 600;
-      font-size: 5em;
+      font-size: 4em;
     }
     a {
       @include montserrat;

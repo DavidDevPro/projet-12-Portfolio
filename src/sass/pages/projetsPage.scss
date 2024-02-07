@@ -1,0 +1,19 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.projetsPage {
+  max-width: 1600px;
+  width: 100%;
+
+  margin: auto;
+
+  .myProjets {
+    padding: 0 20px;
+    h1 {
+      @include roboto-mono;
+      color: $fourth_color;
+      font-weight: 500;
+      font-size: 3.5em;
+    }
+  }
+}
